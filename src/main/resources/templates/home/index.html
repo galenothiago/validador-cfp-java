@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"Sistema de verificação de CPF"</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class=container>
+    <br>
+    <br>
+
+    <h2 style="text-align: center;">Verificador de CPF</h2>
+
+    <form action="/valida-cpf" method="POST">
+
+      <div class="form-group">
+        <label for="exampleInputName">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          placeholder="Digitar Nome"
+          required/>
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="exampleInputCPF">CPF</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Digitar CPF"
+        required/>
+      </div>
+
+      <br>
+
+      <input type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </body>
+</html>
