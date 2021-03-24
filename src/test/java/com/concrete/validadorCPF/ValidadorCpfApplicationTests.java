@@ -2,11 +2,7 @@ package com.concrete.validadorCPF;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import io.qameta.allure.spring4.test.DisplayName;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.InputMismatchException;
 import com.concrete.validadorCPF.models.Cliente;
 
@@ -14,7 +10,6 @@ import com.concrete.validadorCPF.models.Cliente;
 class ValidadorCpfApplicationTests{
 
 	@Test
-	@DisplayName("Quando eu passar um cpf válido o valor precisa ser verdadeiro")
 	void paraValidarCPF() {
 		Cliente cliente = new Cliente();
 		cliente.setNome("Thiago");
