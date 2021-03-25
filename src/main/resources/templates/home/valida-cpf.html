@@ -13,8 +13,8 @@
     <br />
     <br />
     <br />
-    <h2>A validação de CPF foi realizada</h2>
-
+    <h2>A verificação do CPF foi realizada com sucesso!</h2>
+    <br>
     <ul>
       <li><b>Nome: </b><span th:text="${cliente.nome}"></span></li>
       <li><b>CPF: </b><span th:text="${cliente.cpf}"></span></li>
@@ -23,10 +23,10 @@
     <br>
 
     <div th:if="${validado}" class="alert alert-success" role="alert">
-      Foi validado com sucesso
+      Seu CPF é válido!
     </div>
     <div th:unless="${validado}" class="alert alert-danger" role="alert">
-      Não é válido
+      Seu CPF é invalido!
     </div>
   </body>
 </html>
